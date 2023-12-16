@@ -177,12 +177,12 @@
     let Signout = () => {
         sessionStorage.removeItem("user-creds");
         sessionStorage.removeItem("user-info");
-        window.location.href = 'sigin.html'
+        window.location.href = 'index.html'
     }
 
     let CheckCred = () => {
         if (!sessionStorage.getItem("user-creds"))
-            window.location.href = 'sigin.html';
+            window.location.href = 'index.html';
         // console.log();
         else {
             MsgHead.innerText = `user with email "${UserCreds.email}" logged in `;
